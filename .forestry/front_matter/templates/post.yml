@@ -14,5 +14,3 @@ fields:
 - type: text
   name: tags
   label: tags
-pages:
-- _posts/from-somewhere.md

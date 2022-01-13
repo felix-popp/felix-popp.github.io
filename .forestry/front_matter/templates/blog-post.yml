@@ -26,3 +26,5 @@ fields:
 - type: boolean
   name: hidden
   label: hidden
+pages:
+- _posts/2022-01-13-get-the-predictions-of-the-validation-set-in-fast.ai.md

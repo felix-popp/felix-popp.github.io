@@ -2,7 +2,7 @@
 layout: post
 title: Make sticky posts
 author: Chester
-comments: true
+comments: false
 tags: Tale
 excerpt_separator: "<!--more-->"
 sticky: true

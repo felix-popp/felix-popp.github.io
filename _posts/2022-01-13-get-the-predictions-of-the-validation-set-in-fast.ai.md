@@ -9,7 +9,7 @@ sticky: false
 hidden: false
 
 ---
-Getting the predictions after running a model in fast.ai helps to assess the plausibility of the model. For example, if 90% of all labels are the same, the accuracy is likely better than 90%. However, that doesn't mean you have a good model. <!--more--> The following approach was taken from [here](https://forums.fast.ai/t/doing-predictions-and-showing-results-with-v2-questions-best-practice-thread/62915 "Doing predictions and showing results") and slightly modified.
+Getting the predictions of a neural network in fast.ai helps assess a model's performance. For example, if 90% of all labels are identical and the model always predicts this label, the accuracy is 90%. However, that doesn't mean you have a good model. <!--more--> The following approach was taken from [here](https://forums.fast.ai/t/doing-predictions-and-showing-results-with-v2-questions-best-practice-thread/62915 "Doing predictions and showing results") with modifications.
 
     print("label, prediction, confidence, image_name")
     for index,item in enumerate(preds):

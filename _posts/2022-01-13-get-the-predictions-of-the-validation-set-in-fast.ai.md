@@ -11,10 +11,10 @@ hidden: false
 ---
 Getting the predictions after running a model in fast.ai helps to assess the plausibility of the model. For example, if 90% of all labels are the same, the accuracy is likely better than 90%. However, that doesn't mean you have a good model. <!--more--> The following approach was taken from [here](https://forums.fast.ai/t/doing-predictions-and-showing-results-with-v2-questions-best-practice-thread/62915 "Doing predictions and showing results") and slightly modified.
 
-    preds, labels = learn.get_preds(ds_idx=1)
+    print("label, prediction, confidence, image_name")
     for index,item in enumerate(preds):
         prediction = dls.categorize.decode(np.argmax(item)).upper()
         confidence = max(item)
         percent = float(confidence)
         label = labels[index]
-        print(f"{label}   {prediction}   {percent*100:.2f}% confidence.   Image = {dl.items[index].name}")
+        print(f"{label}, {prediction}, {percent*100:.2f}, {(dls.items.iloc[[index]].filename).to_string(index=False)}")

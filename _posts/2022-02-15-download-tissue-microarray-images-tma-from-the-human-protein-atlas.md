@@ -11,7 +11,7 @@ hidden: false
 ---
 The aim is to download microarray tissue images of immunohistochemical staining for HER2 (ERBB2, ENSG00000141736) from the human protein atlas. Images should be from patients with gastric and esophageal cancer.
 
-Enter ERBB2 in the search box on the website [https://www.proteinatlas.org/](https://www.proteinatlas.org/ "https://www.proteinatlas.org/") and then click on "PATHOLOGY". Since we are only interested in images of gastric carcinoma, click on "Stomach" in the PROTEIN EXPRESSION SUMMARY view. 90 TMA images will be displayed. When viewing a specific staining intensity, such as "Low", 2 images of a patient are often displayed. It is also possible to display 4 images of a patient, e.g. for the patient with ID #664 there are 2 images with staining intensity "Low" and 2 with staining intensity "Medium".
+Enter ERBB2 in the search box on the website [proteinatlas.org](https://www.proteinatlas.org/ "https://www.proteinatlas.org/") and then click on "PATHOLOGY". Since we are only interested in images of gastric carcinoma, click on "Stomach" in the PROTEIN EXPRESSION SUMMARY view. 90 TMA images will be displayed. When viewing a specific staining intensity, such as "Low", 2 images of a patient are often displayed. It is also possible to display 4 images of a patient, e.g. for the patient with ID #664 there are 2 images with staining intensity "Low" and 2 with staining intensity "Medium".
 
 ![](/assets/tma-image-freom-the-human-protein-atlas.JPG)
 
@@ -57,4 +57,4 @@ The first image with low staining intensity corresponds to the first image from 
 
 ![](/assets/cab000043_664_adenocarcinoma-nos_low.jpg)
 
-The second image is not loaded. How to find it? Why are 37 images loaded as opposed to 90 on the website?
+The second image is not loaded. How to find it? Why are 37 images loaded as opposed to 90 on [proteinatlas.org](https://www.proteinatlas.org/ "https://www.proteinatlas.org/")?

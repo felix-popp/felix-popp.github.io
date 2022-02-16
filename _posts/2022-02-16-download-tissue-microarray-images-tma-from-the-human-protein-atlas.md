@@ -49,7 +49,7 @@ Then we download the images
 
 This snippet downloads 37 images. We get 2 images for the patient with ID #664.
 
-The first image with low staining intensity corresponds to the first image from the human protein atlas search. 
+The first image with low staining intensity corresponds to the first image from the human protein atlas search.
 
 ![](/assets/cab000043_664_adenocarcinoma-nos_low.jpg)
 

@@ -47,7 +47,7 @@ Then we download the images
                       mode = "wb")
     }
 
-This snippet downloads 37 images. We get 2 images for the patient with ID #664.
+This snippet downloads 37 images. We get 2 images for the patient with ID #664. 
 
 The first image with low staining intensity corresponds to the first image from the human protein atlas search.
 

@@ -4,7 +4,7 @@ title: Download tissue microarray images (TMA) from the human protein atlas
 author: Felix
 comments: false
 tags: ''
-excerpt_separator: ''
+excerpt_separator: <!--more-->
 sticky: false
 hidden: false
 
@@ -47,7 +47,7 @@ Then we download the images
                       mode = "wb")
     }
 
-This snippet downloads 37 images. We get 2 images for the patient with ID #664. 
+This snippet downloads 37 images. We get 2 images for the patient with ID #664.
 
 The first image with low staining intensity corresponds to the first image from the human protein atlas search.
 

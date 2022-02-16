@@ -4,7 +4,7 @@ title: Download tissue microarray images (TMA) from the human protein atlas
 author: Felix
 comments: false
 tags: ''
-excerpt_separator: <!--more-->
+excerpt_separator: "<!--more-->"
 sticky: false
 hidden: false
 

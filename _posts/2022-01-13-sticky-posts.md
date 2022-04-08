@@ -8,6 +8,8 @@ excerpt_separator: "<!--more-->"
 sticky: true
 hidden: true
 
+featureImage: "/assets/Computational surgical oncology.png"
+
 ---
 Sticky, or pinned, posts are featured on the top of every page. Tale provides some flexibility when it comes to this feature.<!--more--> There is no limit on the number of sticky posts you can have. Although do note that each page will show all your sticky posts + the paginated posts. So if you have 4 sticky posts and 5 posts per page, each page can display up to 9 posts.
 

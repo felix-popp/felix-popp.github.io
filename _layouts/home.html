@@ -7,9 +7,6 @@ layout: default
     {% if post.sticky %}
       {% include catalogue_item.html sticky='true' %}
     {% endif %}
-    {% if post.featureImage %}
-      <img src="{{ post.featureImage }}" class="catalogue-featureImage" />
-    {% endif %}
   {% endfor %}
 
   {% for post in paginator.posts %}

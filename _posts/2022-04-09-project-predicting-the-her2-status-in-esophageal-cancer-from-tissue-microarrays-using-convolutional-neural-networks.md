@@ -4,7 +4,8 @@ title: 'Project: Predicting the HER2 status in esophageal cancer from tissue mic
   using convolutional neural networks'
 author: Felix
 comments: false
-tags: Tale
+tags:
+- Projects
 excerpt_separator: "<!--more-->"
 sticky: true
 hidden: true

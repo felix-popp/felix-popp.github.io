@@ -11,7 +11,7 @@ hidden: true
 featureImage: "/assets/figure-attention-vs-avg_brown-3.jpg"
 
 ---
-We aim to develop a deep-learning method to screen microscopic images of esophageal cancer for the presence of HER2 overexpression. Our solution enables direct automated detection of HER2 in immunohistochemically stained tissue sections without the need for manual assessment and additional costly in situ hybridization (ISH) assays.
+We aim to develop a deep-learning method to screen microscopic images of esophageal cancer for the presence of HER2 overexpression. <!--more--> Our solution enables direct automated detection of HER2 in immunohistochemically stained tissue sections without the need for manual assessment and additional costly in situ hybridization (ISH) assays.
 
 We trained neural networks (CNNs) on a large dataset of 1,602 patient samples and tested them on an independent set of 307 patient samples. We incorporated an attention mechanism into the CNN architecture to identify the tissue regions that the network identifies as important for the prediction.
 

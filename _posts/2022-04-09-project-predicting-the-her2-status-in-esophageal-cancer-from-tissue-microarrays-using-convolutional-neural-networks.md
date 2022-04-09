@@ -2,7 +2,7 @@
 layout: post
 title: 'Project: Predicting the HER2 status in esophageal cancer from tissue microarrays
   using convolutional neural networks'
-author: Chester
+author: Felix
 comments: false
 tags: Tale
 excerpt_separator: "<!--more-->"

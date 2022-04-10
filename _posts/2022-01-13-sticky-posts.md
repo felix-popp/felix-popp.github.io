@@ -6,7 +6,7 @@ comments: false
 tags: Tale
 excerpt_separator: "<!--more-->"
 sticky: false
-hidden: true
+hidden: false
 featureImage: ''
 
 ---

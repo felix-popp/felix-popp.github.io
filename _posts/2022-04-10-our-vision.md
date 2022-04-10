@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Our Vision
-author: Chester
+author: Felix
 comments: false
-tags: Tale
+tags: []
 excerpt_separator: "<!--more-->"
 sticky: false
 hidden: true

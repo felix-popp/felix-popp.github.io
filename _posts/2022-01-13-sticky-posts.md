@@ -5,9 +5,8 @@ author: Chester
 comments: false
 tags: Tale
 excerpt_separator: "<!--more-->"
-sticky: true
+sticky: false
 hidden: true
-
 featureImage: "/assets/Computational surgical oncology.png"
 
 ---

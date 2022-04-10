@@ -5,7 +5,7 @@ author: Felix
 comments: false
 tags: []
 excerpt_separator: "<!--more-->"
-sticky: false
+sticky: true
 hidden: true
 featureImage: "/assets/Computational surgical oncology.png"
 

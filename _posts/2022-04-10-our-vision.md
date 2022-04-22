@@ -12,7 +12,7 @@ featureImage: "/assets/Computational surgical oncology.png"
 ---
 ## Our vision:
 
-All digital patient data become biomarkers with the help of artificial intelligence. These digital biomarkers help to personalize therapy decisions. <!--more-->
+To personalize therapy decisions by turning all digital patient data into biomarkers with the help of artificial intelligence. <!--more-->
 
 ## What does that mean?
 

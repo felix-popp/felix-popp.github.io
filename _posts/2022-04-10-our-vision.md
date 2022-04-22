@@ -14,13 +14,13 @@ featureImage: "/assets/Computational surgical oncology.png"
 
 To personalize therapy decisions by turning all digital patient data into biomarkers with the help of artificial intelligence. <!--more-->
 
-## What is Personalized Medicine?
+## What is personalized medicine?
 
 Often there are multiple equivalent therapies for a patient. Personalized cancer therapy predicts which patients are more likely to respond to one of these specific therapies. Biomarkers, especially in cancer medicine, are used for this prediction. To date, few biomarkers are measured to individualize therapy decisions, and optional targeted therapy is usually initiated based on these biomarkers.
 
 One example of such a biomarker targeting oesophageal cancer is the human epidermal growth factor receptor 2 (HER2). HER2, a member of the EGFR family, is localized on the cell membrane and accelerates tumor growth. As a biomarker, the HER2 status determines the potential administration of antibody therapy with trastuzumab. This therapy is recommended for palliative esophageal carcinoma if HER-2 expression is present, i.e., a positive HER-2 status.
 
-## How does artificial intelligence advance Personalized Medicine?
+## How does artificial intelligence advance personalized medicine?
 
 The more biomarkers used, the more treatment decisions can be individualized. The idea of the Computational Surgical Oncology group is to digitize all available patient data and use them as biomarkers for individual therapy decisions. With the help of neural networks, the resulting complex and extensive data can be mastered and transformed into personal therapy decisions.
 

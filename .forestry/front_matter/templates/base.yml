@@ -1,0 +1,31 @@
+---
+label: base
+hide_body: false
+fields:
+- type: text
+  name: layout
+  label: layout
+- type: text
+  name: title
+  label: title
+- type: text
+  name: author
+  label: author
+- type: boolean
+  name: comments
+  label: comments
+- type: text
+  name: tags
+  label: tags
+- type: text
+  name: excerpt_separator
+  label: excerpt_separator
+- type: boolean
+  name: sticky
+  label: sticky
+- type: boolean
+  name: hidden
+  label: hidden
+- type: text
+  name: featureImage
+  label: featureImage

@@ -4,7 +4,7 @@ title: How to launch and use Jupyter Notebooks on HPC Cluster
 author: Felix
 comments: false
 tags: fast.ai
-excerpt_separator: ''
+excerpt_separator: "<!--more-->"
 sticky: false
 hidden: false
 featureImage: ''
@@ -18,77 +18,67 @@ HPC exclusive node.
 
 Such jupyter notebook could be very useful for debugging or testing
 
-of code that demands a lot of computational power.
+of code that demands a lot of computational power. <!--more-->
 
 \## Running jupyter as SBATCH job:
 
 1\. On the cluster have a script, e.g. run_jupyter.sh ,  with the following code:
 
-  \`\`\`
+\`\`\`
 
     #!/bin/bash -l
-
+    
     #SBATCH --partition=<zmmk-exclusive or excellence-exclusive>
-
+    
     #SBATCH --job-name=<job name>
-
+    
     #SBATCH --nodes=<nr of nodes>
-
+    
     #SBATCH --gres=gpu:<nr of gpus>
-
+    
     #SBATCH --mem=<number of gb>
-
+    
     #SBATCH --time=<time in minutes>
-
+    
     #SBATCH --output=<file to log standard output, important to see the notebook server URI!!!!>
-
+    
     #Go to the folder you wanna run jupyter in
-
+    
     cd $HOME
-
+    
     #Pick a port
-
+    
     PORT=<port nr>
-
+    
     #Forward port to cheops1 cluster
-
+    
     ssh -N -f -R $PORT:localhost:$PORT cheops1
-
+    
     #run conda
-
+    
     conda activate <env name>
-
+    
     #Start the notebook
-
+    
     jupyter notebook --no-browser --port=$PORT
 
-  \`\`\`
-
- 
+\`\`\`
 
 2\. Now everytime you want to run the remote jupyter server, from your local computer do:
 
-  
-
-  \`\`\`
+\`\`\`
 
     $ ssh -L <local port number e.g.: 8080>:localhost:<the port number you had on the script> user@cheops1.rrz.uni-koeln.de
-
+    
     \[user@cheops1 \~\]$ sbatch run_jupyter.sh
 
-  \`\`\`
+\`\`\`
 
-  
+And access the jupyter in your web browser by typing the URI printed in the output file of your sbatch job \\
 
-  
+Note: the port of the URI should be your local port (8080 in this example), not the port on cheops
 
-  And access the jupyter in your web browser by typing the URI printed in the output file of your sbatch job \\
-
-  Note: the port of the URI should be your local port (8080 in this example), not the port on cheops
-
-  
-
-\## Running jupyter as SRUN job:  
+\## Running jupyter as SRUN job:
 
 1\. Connect via SSH to your HPC login node (cheops0)
 
@@ -120,7 +110,7 @@ $ jupyter notebook --no-browser --port=8080
 
 N.B. You could choose different port instead of 8080 but pay attention to its number.
 
-\*Save a URL link with token inside because it will be requested for accessing Jupyter 
+\*Save a URL link with token inside because it will be requested for accessing Jupyter
 
 remotely.*
 

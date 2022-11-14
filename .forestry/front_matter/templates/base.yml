@@ -29,5 +29,3 @@ fields:
 - type: text
   name: featureImage
   label: featureImage
-pages:
-- _posts/how-to-launch-and-use-jupyter-notebooks-on-hpc-cluster.md

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Our Vision
+title: Wie schreibe ich eine erfolgreiche Dissertation?
 author: Felix
 comments: false
 tags: []
@@ -10,24 +10,10 @@ hidden: true
 featureImage: "/assets/Computational surgical oncology.png"
 
 ---
-## Our vision:
+# Wie schreibe ich eine erfolgreiche Dissertation?
 
-To personalize therapy decisions by turning all digital patient data into biomarkers with the help of artificial intelligence. <!--more-->
+Zwei zentrale Punkte zum Erfolg der Dissertation sind die Datenauswertung und der Schreibprozess. Beide Prozesse gehen fließen ineinander über und bilden einen Kreislauf. <!--more-->D.h. nach einer Datenauswertung wird beim Schreiben klar, dass noch weitere Auswertungen nötig sind, um den roten Faden der Arbeit sichtbar zu machen. Dieses Wahlfach vermittelt Methoden, wie dieser Kreislauf möglichst kurzgehalten werden kann und unnötige Auswertungen vermieden werden können. Wesentlich sind eine übersichtliche, zielorientierte und erweiterbare Auswertung und Datenpräsentation. Damit können die Kernaussagen der Dissertation transportiert werden, so dass der fertige Text für die Leser*innen verständlich und nachvollziehbar ist.
 
-## What is personalized medicine?
+Bei den meisten Doktorarbeiten werden klinische Daten erhoben und ausgewertet. In diesem Wahlblock werden exemplarisch Daten von Patientinnen mit Brustkrebs analysiert. Für die Auswertung wird die freie Statistiksoftware R vorgestellt. Außerdem werden Tipps für einen effektiven Schreibprozess gezeigt.
 
-Often there are multiple equivalent therapies for a patient. Personalized cancer therapy predicts which patients are more likely to respond to one of these specific therapies. Biomarkers, especially in cancer medicine, are used for this prediction. To date, few biomarkers are measured to individualize therapy decisions, and optional targeted therapy is usually initiated based on these biomarkers.
-
-One example of such a biomarker targeting oesophageal cancer is the human epidermal growth factor receptor 2 (HER2). HER2, a member of the EGFR family, is localized on the cell membrane and accelerates tumor growth. As a biomarker, the HER2 status determines the potential administration of antibody therapy with trastuzumab. This therapy is recommended for palliative esophageal carcinoma if HER-2 expression is present, i.e., a positive HER-2 status.
-
-## How does artificial intelligence advance personalized medicine?
-
-The more biomarkers used, the more treatment decisions can be individualized. The idea of the Computational Surgical Oncology group is to digitize all available patient data and use them as biomarkers for individual therapy decisions. With the help of neural networks, the resulting complex and extensive data can be mastered and transformed into personal therapy decisions.
-
-Of particular interest are pathological image data, such as morphological H&E staining, which contain more information than is visible to the bare eye. Thus, it has been possible to predict molecular mutations based on H&E data.
-
-The Computational Surgical Oncology group uses digital H&E staining (about 10 Gb per image) to predict the response to cancer therapies. In the future, this will allow individualized decisions as to whether a patient should have upfront surgery or neoadjuvant therapy.
-
-The type and number of biomarkers will be gradually increased for the personalization of cancer therapy. Clinical data will be combined with H&E stainings to optimize the prediction of response to therapy. Later, radiological imaging such as computed tomography (CT) will also be integrated as biomarkers. In addition to choosing the optimal individual therapy, artificial intelligence can be used to determine the prognosis for cancer.
-
-Digital biomarkers support important surgical decisions during operations. In addition to cancer therapy, the focus of the Computational Surgical Oncology group is on AI-supported optimization of surgical strategy. Biomarkers can, for example, help in planning surgery to select the most suitable surgical procedure for an individual patient. Artificial intelligence methods also assess the surgical risk on an individual basis.
+Der Wahlblock findet am um im Raum der Lehre in der Chirurgie statt. Die Anmeldung erfolgt über KLIPS: Wahlblock "Data Science mit R - Verstehen und Auswerten von klinischen Daten", Kursnummer 15021.0022.

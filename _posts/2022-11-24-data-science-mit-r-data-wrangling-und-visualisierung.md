@@ -18,7 +18,7 @@ METABRIC
 Fast jede Software hat Erweiterungen irgendeiner Art. Die Bezeichnungen
 variieren von extensions über plug-ins bis zur library. Unterschiedliche
 Terminologie für dasselbe Prinzip: Mehr Features durch Erweiterungen,
-die andere Leute bereitstellen. R hat sowas natürlich auch, als populäre
+die andere Leute bereitstellen. <!--more--> R hat sowas natürlich auch, als populäre
 open-source Software. Hier heißen die Erweiterungen packages und
 bestehen aus Funktionen, die andere Leute für bestimmte Anwendungsfälle
 geschrieben haben. Durch ein zentrales Verteilungssystem werden die

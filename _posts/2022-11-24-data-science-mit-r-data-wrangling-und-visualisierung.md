@@ -192,6 +192,7 @@ fantastischen library `gtsummary`.
 tbl_summary(metabric %>% select(type_of_breast_surgery))
 ```
 
+<div>
 <div id="hmevqpvait" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
@@ -565,6 +566,8 @@ tbl_summary(metabric %>% select(type_of_breast_surgery))
   </tfoot>
 </table>
 </div>
+</div>
+
 
 Jetzt entfernen wir die ungültigen Werte
 

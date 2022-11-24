@@ -590,5 +590,3 @@ p
 
 Patientinnen, die eine Matektomie erhalten haben, sind offensichtlich
 älter.
-
-# `{r} #  #  # survObject <- Surv(time = metabric$overall_survival_months, event = metabric$overall_survival) #  #  # metabric$her2_status <- factor(metabric$her2_status) #  # fit <- survfit(survObject ~ her2_status, data = metabric) # ggsurvplot(fit, data = metabric, pval = TRUE) #  # surv_median(fit) #`

@@ -7,7 +7,7 @@ tags: []
 excerpt_separator: "<!--more-->"
 sticky: true
 hidden: true
-featureImage: "/assets/laptop party.jpg"
+featureImage: "/assets/laptop_party.jpg"
 
 ---
 # Datenauswertung und Schreibprozess

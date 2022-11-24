@@ -5,7 +5,7 @@ author: Felix
 comments: false
 tags: []
 excerpt_separator: "<!--more-->"
-sticky: true
+sticky: false
 hidden: true
 featureImage: ''
 

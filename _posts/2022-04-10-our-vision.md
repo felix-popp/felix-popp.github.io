@@ -7,7 +7,7 @@ tags: []
 excerpt_separator: "<!--more-->"
 sticky: true
 hidden: true
-featureImage: "/assets/Computational surgical oncology.png"
+featureImage: "/assets/laptop party.jpg"
 
 ---
 # Datenauswertung und Schreibprozess

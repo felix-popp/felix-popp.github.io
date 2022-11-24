@@ -190,7 +190,9 @@ tbl_summary(metabric %>% select(type_of_breast_surgery))
 ```
 
 <?
-<img src="./assets/Data_Science_mit_R_METABRIC_files/figure-gfm/table-1.jpg" width=50% >
+
+<img src="./assets/Data_Science_mit_R_METABRIC_files/figure-gfm/table-1.jpg" width=50%>
+
 ?>
 
 ![](/assets/Data_Science_mit_R_METABRIC_files/figure-gfm/table-1.jpg)

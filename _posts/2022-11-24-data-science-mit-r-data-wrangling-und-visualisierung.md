@@ -189,7 +189,7 @@ fantastischen library `gtsummary`.
 tbl_summary(metabric %>% select(type_of_breast_surgery))
 ```
 
-<img src="../Data_Science_mit_R_METABRIC_files/figure-gfm/table-1.jpg">
+<img src="../assets/Data_Science_mit_R_METABRIC_files/figure-gfm/table-1.jpg">
 
 ![](/assets/Data_Science_mit_R_METABRIC_files/figure-gfm/table-1.jpg | width=100)
 

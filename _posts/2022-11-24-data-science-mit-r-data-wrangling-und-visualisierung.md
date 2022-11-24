@@ -10,8 +10,6 @@ hidden: false
 featureImage: ''
 
 ---
-# Zusätzliche Funktionalität laden
-
 Fast jede Software hat Erweiterungen irgendeiner Art. Die Bezeichnungen
 variieren von extensions über plug-ins bis zur library. Unterschiedliche
 Terminologie für dasselbe Prinzip: Mehr Features durch Erweiterungen,

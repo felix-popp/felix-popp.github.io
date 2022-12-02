@@ -270,7 +270,7 @@ tbl_summary(
 ```
 
 
-xx
+xxx
 
 ![](/assets/Survival_Analysis_mit_R_METABRIC_files/figure-commonmark/table3.jpg width="75%")
 

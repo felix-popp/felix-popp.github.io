@@ -269,11 +269,10 @@ tbl_summary(
   bold_labels() 
 ```
 
-![](../assets/Survival_Analysis_mit_R_METABRIC_files/figure-commonmark/table3.jpg  width="75%")
 
-xxx
+xx
 
-![](/assets/Survival_Analysis_mit_R_METABRIC_files/figure-commonmark/table3.jpg)
+![](/assets/Survival_Analysis_mit_R_METABRIC_files/figure-commonmark/table3.jpg width="75%")
 
 Nur wenige Patientinnen erhalten eine Chemotherapie `136 + 252 = 388`.
 Patientinnen mit Mastektomie erhalten signifikant häufiger eine

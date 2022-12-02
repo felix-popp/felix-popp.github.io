@@ -11,7 +11,7 @@ featureImage: ''
 
 ---
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-  </head>
+
 Sobald bereinigte Daten vorliegen, gibt es zwei Hauptmotoren der
 Wissensgenerierung: Visualisierung und Modellierung. Beide haben
 komplementäre Stärken und Schwächen, so dass bei einer Analyse immer
@@ -22,7 +22,7 @@ beantwortet werden. Daten aus klinischen Studien enthalten in der Regel
 Überlebensdaten, die eine Überlebensanalyse erfordern. Bei dieser Art
 von Analyse ist die Zeit bis zu einem bestimmten Ereignis, z.B. Tod oder
 Wiederauftreten der Krankheit, von Interesse, und zwei (oder mehr)
-Gruppen von Patienten werden in Bezug auf diese Zeit verglichen.
+Gruppen von Patienten werden in Bezug auf diese Zeit verglichen. <!--more-->
 
 # Überlebensanalyse: Die Statistik
 

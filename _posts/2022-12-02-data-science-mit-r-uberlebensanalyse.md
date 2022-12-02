@@ -10,11 +10,6 @@ hidden: false
 featureImage: ''
 
 ---
-Survival
-================
-
-# Überlebensanalyse
-
 Sobald bereinigte Daten vorliegen, gibt es zwei Hauptmotoren der
 Wissensgenerierung: Visualisierung und Modellierung. Beide haben
 komplementäre Stärken und Schwächen, so dass bei einer Analyse immer

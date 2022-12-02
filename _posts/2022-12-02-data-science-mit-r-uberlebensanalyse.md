@@ -28,11 +28,11 @@ Gruppen von Patienten werden in Bezug auf diese Zeit verglichen. <!--more-->
 
 Bevor wir uns näher mit den Statistiken befassen, wollen wir uns mit
 einigen nützlichen Begriffen vertraut machen: Der Begriff “Zensierung”
-bezieht sich auf unvollständige Daten. Bei einigen Patient*innen wissen
+bezieht sich auf unvollständige Daten. Bei einigen Patient_innen wissen
 wir vielleicht, dass sie oder er eine bestimmte Zeit lang verfolgt
 wurde, ohne dass ein “Ereignis” eingetreten ist, aber wir wissen
-vielleicht nicht, ob die Patient*in letztendlich überlebt hat oder
-nicht. Dies kann der Fall sein, wenn die Patient\*in entweder bei der
+vielleicht nicht, ob die Patient_in letztendlich überlebt hat oder
+nicht. Dies kann der Fall sein, wenn die Patient*in entweder bei der
 Nachbeobachtung verloren ging oder sich aus der Studie zurückzog. Die
 Daten dieses speziellen Patienten werden nach dem letzten Zeitpunkt
 zensiert, an dem wir sicher wissen, dass bei Ihrem Patienten das
@@ -70,7 +70,7 @@ Der Kaplan-Meier-Schätzer beruht ferner auf der Annahme, dass die
 Wahrscheinlichkeit, einen bestimmten Zeitpunkt $t$ zu überleben, gleich
 dem Produkt der beobachteten Überlebensraten bis zum Zeitpunkt $t$ ist.
 Genauer gesagt ist $S(t)$, die Überlebenswahrscheinlichkeit zum
-Zeitpunkt $t$ gegeben durch $S(t) = p_1 \cdot p_2 \cdots p_t$, wobei
+Zeitpunkt $t$ gegeben durch $S(t) = p_1 \\cdot p_2 \\cdots p_t$, wobei
 $p_1$ der Anteil aller Patienten ist, die den ersten Zeitpunkt
 überleben, $p_2$ der Anteil der Patienten, die den zweiten Zeitpunkt
 überleben, und so weiter, bis der Zeitpunkt $t$ erreicht ist. Dabei ist
@@ -223,7 +223,7 @@ ggsurvplot(fit, data = metabric, pval = TRUE)
 
 ![](../assets/Survival_Analysis_mit_R_METABRIC_files/figure-commonmark/unnamed-chunk-14-1.png)
 
-Der Log-Rank p-Wert von \< 0.0001 bedeutet ein signifikantes Ergebnis.
+Der Log-Rank p-Wert von < 0.0001 bedeutet ein signifikantes Ergebnis.
 
 Aber ist das ein kausaler Zusammenhang? Waren die Patientinnen, die eine
 brusterhaltende Therapie bekommen haben, vielleicht besonders alt oder
@@ -269,9 +269,11 @@ tbl_summary(
   bold_labels() 
 ```
 
-![](../assets/Survival_Analysis_mit_R_METABRIC_files/figure-commonmark/table3.jpg  width="75%")
+!\[\](../assets/Survival_Analysis_mit_R_METABRIC_files/figure-commonmark/table3.jpg  width="75%")
 
-xx
+xxx
+
+![](/assets/Survival_Analysis_mit_R_METABRIC_files/figure-commonmark/table3.jpg)
 
 Nur wenige Patientinnen erhalten eine Chemotherapie `136 + 252 = 388`.
 Patientinnen mit Mastektomie erhalten signifikant häufiger eine

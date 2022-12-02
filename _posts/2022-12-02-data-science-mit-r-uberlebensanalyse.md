@@ -10,17 +10,32 @@ hidden: false
 featureImage: ''
 
 ---
-Sobald bereinigte Daten vorliegen, gibt es zwei Hauptmotoren der Wissensgenerierung: Visualisierung und Modellierung. Beide haben komplementäre Stärken und Schwächen, so dass bei einer Analyse immer wieder zwischen ihnen gewechselt wird. Modelle sind ergänzende Instrumente zur Visualisierung. Wenn die wissenschaftliche Fragestellung hinreichend genau formuliert ist, kann sie mit Hilfe eines Modells beantwortet werden. Daten aus klinischen Studien enthalten in der Regel Überlebensdaten, die eine Überlebensanalyse erfordern. Bei dieser Art von Analyse ist die Zeit bis zu einem bestimmten Ereignis, z.B. Tod oder Wiederauftreten der Krankheit, von Interesse, und zwei (oder mehr) Gruppen von Patienten werden in Bezug auf diese Zeit verglichen. <!--more-->
+Survival
+================
+
+# Überlebensanalyse
+
+Sobald bereinigte Daten vorliegen, gibt es zwei Hauptmotoren der
+Wissensgenerierung: Visualisierung und Modellierung. Beide haben
+komplementäre Stärken und Schwächen, so dass bei einer Analyse immer
+wieder zwischen ihnen gewechselt wird. Modelle sind ergänzende
+Instrumente zur Visualisierung. Wenn die wissenschaftliche Fragestellung
+hinreichend genau formuliert ist, kann sie mit Hilfe eines Modells
+beantwortet werden. Daten aus klinischen Studien enthalten in der Regel
+Überlebensdaten, die eine Überlebensanalyse erfordern. Bei dieser Art
+von Analyse ist die Zeit bis zu einem bestimmten Ereignis, z.B. Tod oder
+Wiederauftreten der Krankheit, von Interesse, und zwei (oder mehr)
+Gruppen von Patienten werden in Bezug auf diese Zeit verglichen.
 
 # Überlebensanalyse: Die Statistik
 
 Bevor wir uns näher mit den Statistiken befassen, wollen wir uns mit
 einigen nützlichen Begriffen vertraut machen: Der Begriff “Zensierung”
-bezieht sich auf unvollständige Daten. Bei einigen Patient_innen wissen
+bezieht sich auf unvollständige Daten. Bei einigen Patient*innen wissen
 wir vielleicht, dass sie oder er eine bestimmte Zeit lang verfolgt
 wurde, ohne dass ein “Ereignis” eingetreten ist, aber wir wissen
-vielleicht nicht, ob die Patient_in letztendlich überlebt hat oder
-nicht. Dies kann der Fall sein, wenn die Patient*in entweder bei der
+vielleicht nicht, ob die Patient*in letztendlich überlebt hat oder
+nicht. Dies kann der Fall sein, wenn die Patient\*in entweder bei der
 Nachbeobachtung verloren ging oder sich aus der Studie zurückzog. Die
 Daten dieses speziellen Patienten werden nach dem letzten Zeitpunkt
 zensiert, an dem wir sicher wissen, dass bei Ihrem Patienten das
@@ -50,52 +65,71 @@ eine nicht-parametrische Statistik nicht auf der Annahme einer
 zugrundeliegenden Wahrscheinlichkeitsverteilung beruht.
 
 Diese Statistik gibt die Wahrscheinlichkeit an, dass ein einzelner
-Patient nach einem bestimmten Zeitpunkt $t$ überlebt. Bei $t = 0$ ist
-der Kaplan-Meier-Schätzer 1, und wenn $t$ gegen unendlich geht, geht der
-Schätzer gegen 0.
+Patient nach einem bestimmten Zeitpunkt
+![t](https://latex.codecogs.com/svg.latex?t "t") überlebt. Bei
+![t = 0](https://latex.codecogs.com/svg.latex?t%20%3D%200 "t = 0") ist
+der Kaplan-Meier-Schätzer 1, und wenn
+![t](https://latex.codecogs.com/svg.latex?t "t") gegen unendlich geht,
+geht der Schätzer gegen 0.
 
 Der Kaplan-Meier-Schätzer beruht ferner auf der Annahme, dass die
-Wahrscheinlichkeit, einen bestimmten Zeitpunkt $t$ zu überleben, gleich
-dem Produkt der beobachteten Überlebensraten bis zum Zeitpunkt $t$ ist.
-Genauer gesagt ist $S(t)$, die Überlebenswahrscheinlichkeit zum
-Zeitpunkt $t$ gegeben durch $S(t) = p_1 \\cdot p_2 \\cdots p_t$, wobei
-$p_1$ der Anteil aller Patienten ist, die den ersten Zeitpunkt
-überleben, $p_2$ der Anteil der Patienten, die den zweiten Zeitpunkt
-überleben, und so weiter, bis der Zeitpunkt $t$ erreicht ist. Dabei ist
-zu beachten, dass ab $p_2$ bis $p_t$ bei der Berechnung der Anteile für
-jeden weiteren Zeitpunkt nur die Patienten berücksichtigt werden, die
-den vorherigen Zeitpunkt überlebt haben; $p_2, p_3, ..., p_t$ sind also
-Anteile, die von den vorherigen Anteilen abhängig sind.
+Wahrscheinlichkeit, einen bestimmten Zeitpunkt
+![t](https://latex.codecogs.com/svg.latex?t "t") zu überleben, gleich
+dem Produkt der beobachteten Überlebensraten bis zum Zeitpunkt
+![t](https://latex.codecogs.com/svg.latex?t "t") ist. Genauer gesagt ist
+![S(t)](https://latex.codecogs.com/svg.latex?S%28t%29 "S(t)"), die
+Überlebenswahrscheinlichkeit zum Zeitpunkt
+![t](https://latex.codecogs.com/svg.latex?t "t") gegeben durch
+![S(t) = p_1 \cdot p_2 \cdots p_t](https://latex.codecogs.com/svg.latex?S%28t%29%20%3D%20p_1%20%5Ccdot%20p_2%20%5Ccdots%20p_t "S(t) = p_1 \cdot p_2 \cdots p_t"),
+wobei ![p_1](https://latex.codecogs.com/svg.latex?p_1 "p_1") der Anteil
+aller Patienten ist, die den ersten Zeitpunkt überleben,
+![p_2](https://latex.codecogs.com/svg.latex?p_2 "p_2") der Anteil der
+Patienten, die den zweiten Zeitpunkt überleben, und so weiter, bis der
+Zeitpunkt ![t](https://latex.codecogs.com/svg.latex?t "t") erreicht ist.
+Dabei ist zu beachten, dass ab
+![p_2](https://latex.codecogs.com/svg.latex?p_2 "p_2") bis
+![p_t](https://latex.codecogs.com/svg.latex?p_t "p_t") bei der
+Berechnung der Anteile für jeden weiteren Zeitpunkt nur die Patienten
+berücksichtigt werden, die den vorherigen Zeitpunkt überlebt haben;
+![p_2, p_3, ..., p_t](https://latex.codecogs.com/svg.latex?p_2%2C%20p_3%2C%20...%2C%20p_t "p_2, p_3, ..., p_t")
+sind also Anteile, die von den vorherigen Anteilen abhängig sind.
 
 In der Praxis ist es sinnvoll, die Überlebenszeiten in der Reihenfolge
 der zunehmenden Dauer zu ordnen. Dies schließt die zensierten Werte ein.
 Anschließend werden die Anteile wie oben beschrieben berechnet und
-aufsummiert, um $S(t)$ zu erhalten. Die zensierten Patienten werden nach
-dem Zensurzeitpunkt weggelassen, so dass sie den Anteil der überlebenden
-Patienten nicht beeinflussen. Ausführliche Informationen zu dieser
-Methode findest Du in (Swinscow und Campbell, 2002).
+aufsummiert, um
+![S(t)](https://latex.codecogs.com/svg.latex?S%28t%29 "S(t)") zu
+erhalten. Die zensierten Patienten werden nach dem Zensurzeitpunkt
+weggelassen, so dass sie den Anteil der überlebenden Patienten nicht
+beeinflussen. Ausführliche Informationen zu dieser Methode findest Du in
+(Swinscow und Campbell, 2002).
 
 Wir können den Log-Rank-Test verwenden, um die Überlebenskurven zweier
 Gruppen zu vergleichen. Der Log-Rank-Test ist ein statistischer
 Hypothesentest, der die Nullhypothese prüft, dass sich die
 Überlebenskurven zweier Populationen nicht unterscheiden. Dabei wird der
-$p$-Wert berechnet. Er wird bei statistischen Hypothesentests verwendet,
-um die statistische Signifikanz zu quantifizieren. Ein Ergebnis mit
-$p < 0,05$ wird normalerweise als signifikant angesehen. In unserem Fall
-würde $p < 0,05$ bedeuten, dass die beiden Behandlungsgruppen in Bezug
-auf das Überleben signifikant unterschiedlich sind.
+![p](https://latex.codecogs.com/svg.latex?p "p")-Wert berechnet. Er wird
+bei statistischen Hypothesentests verwendet, um die statistische
+Signifikanz zu quantifizieren. Ein Ergebnis mit
+![p \< 0,05](https://latex.codecogs.com/svg.latex?p%20%3C%200%2C05 "p < 0,05")
+wird normalerweise als signifikant angesehen. In unserem Fall würde
+![p \< 0,05](https://latex.codecogs.com/svg.latex?p%20%3C%200%2C05 "p < 0,05")
+bedeuten, dass die beiden Behandlungsgruppen in Bezug auf das Überleben
+signifikant unterschiedlich sind.
 
 # Cox-Proportional-Hazards-Modelle
 
 Eine weitere nützliche Funktion im Zusammenhang mit Überlebensanalysen
-ist die Hazard-Funktion $h(t)$. Sie beschreibt die Wahrscheinlichkeit
-eines Ereignisses oder dessen Hazard $h$ (in diesem Fall das Überleben),
-wenn die Person bis zu diesem bestimmten Zeitpunkt t überlebt hat. Sie
-ist etwas schwieriger zu veranschaulichen als der Kaplan-Meier-Schätzer,
-da sie das momentane Todesrisiko misst. Dennoch benötigen wir die
-Hazard-Funktion, um Kovariaten zu berücksichtigen, wenn wir das
-Überleben von Patientengruppen vergleichen. Kovariate, die in der
-Regressionsanalyse auch als erklärende oder unabhängige Variablen
+ist die Hazard-Funktion
+![h(t)](https://latex.codecogs.com/svg.latex?h%28t%29 "h(t)"). Sie
+beschreibt die Wahrscheinlichkeit eines Ereignisses oder dessen Hazard
+![h](https://latex.codecogs.com/svg.latex?h "h") (in diesem Fall das
+Überleben), wenn die Person bis zu diesem bestimmten Zeitpunkt t
+überlebt hat. Sie ist etwas schwieriger zu veranschaulichen als der
+Kaplan-Meier-Schätzer, da sie das momentane Todesrisiko misst. Dennoch
+benötigen wir die Hazard-Funktion, um Kovariaten zu berücksichtigen,
+wenn wir das Überleben von Patientengruppen vergleichen. Kovariate, die
+in der Regressionsanalyse auch als erklärende oder unabhängige Variablen
 bezeichnet werden, sind Variablen, die möglicherweise mit der
 untersuchten Variable in Zusammenhang stehen und dadurch das Ergebnis
 verzerren.
@@ -211,7 +245,7 @@ ggsurvplot(fit, data = metabric, pval = TRUE)
 
 ![](../assets/Survival_Analysis_mit_R_METABRIC_files/figure-commonmark/unnamed-chunk-14-1.png)
 
-Der Log-Rank p-Wert von < 0.0001 bedeutet ein signifikantes Ergebnis.
+Der Log-Rank p-Wert von \< 0.0001 bedeutet ein signifikantes Ergebnis.
 
 Aber ist das ein kausaler Zusammenhang? Waren die Patientinnen, die eine
 brusterhaltende Therapie bekommen haben, vielleicht besonders alt oder
@@ -223,12 +257,16 @@ Cox-Proportionale-Hazards-Modelle die Einbeziehung von Kovariaten. Wir
 können Cox-Proportionale-Hazards-Modelle mit der Funktion `coxph`
 erstellen und sie mit `ggforest` visualisieren. Diese Art der
 Darstellung wird Forest Plot genannt. Er zeigt die so genannte Hazard
-Ratios ($HR$), die aus dem Modell für alle dichotomen Kovariaten
-abgeleitet werden, die wir in die Formel in `coxph` aufgenommen haben.
-Kurz gesagt, eine $HR > 1$ zeigt ein erhöhtes Sterberisiko (gemäß der
-Definition von $h(t)$) an, wenn eine bestimmte Bedingung bei einem
-Patienten erfüllt ist. Ein $HR < 1$ bedeutet dagegen ein verringertes
-Risiko. Schauen wir uns nun die Ergebnisse des Modells an.
+Ratios (![HR](https://latex.codecogs.com/svg.latex?HR "HR")), die aus
+dem Modell für alle dichotomen Kovariaten abgeleitet werden, die wir in
+die Formel in `coxph` aufgenommen haben. Kurz gesagt, eine
+![HR \> 1](https://latex.codecogs.com/svg.latex?HR%20%3E%201 "HR > 1")
+zeigt ein erhöhtes Sterberisiko (gemäß der Definition von
+![h(t)](https://latex.codecogs.com/svg.latex?h%28t%29 "h(t)")) an, wenn
+eine bestimmte Bedingung bei einem Patienten erfüllt ist. Ein
+![HR \< 1](https://latex.codecogs.com/svg.latex?HR%20%3C%201 "HR < 1")
+bedeutet dagegen ein verringertes Risiko. Schauen wir uns nun die
+Ergebnisse des Modells an.
 
 ``` r
 # Fit a Cox proportional hazards model
@@ -239,10 +277,11 @@ ggforest(fit.coxph, data = metabric)
 ![](../assets/Survival_Analysis_mit_R_METABRIC_files/figure-commonmark/unnamed-chunk-16-1.png)
 
 Bis auf die Gabe der Chemotherapie gibt es keine signifikanten
-Kovariaten. Eine Chemotherapie ist bei $HR > 1$ mit einem erhöhten
-Sterberisiko verbunden. Jetzt stellt sich die Frage, ob die
-Chemotherapie mit der Operationsart zusammenhängt. Schauen wir uns
-hierzu eine Tabelle an.
+Kovariaten. Eine Chemotherapie ist bei
+![HR \> 1](https://latex.codecogs.com/svg.latex?HR%20%3E%201 "HR > 1")
+mit einem erhöhten Sterberisiko verbunden. Jetzt stellt sich die Frage,
+ob die Chemotherapie mit der Operationsart zusammenhängt. Schauen wir
+uns hierzu eine Tabelle an.
 
 ``` r
 trial2 <- metabric %>% select(type_of_breast_surgery, chemotherapy)

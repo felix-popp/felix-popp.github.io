@@ -10,17 +10,7 @@ hidden: false
 featureImage: ''
 
 ---
-Sobald bereinigte Daten vorliegen, gibt es zwei Hauptmotoren der
-Wissensgenerierung: Visualisierung und Modellierung. Beide haben
-komplementäre Stärken und Schwächen, so dass bei einer Analyse immer
-wieder zwischen ihnen gewechselt wird. Modelle sind ergänzende
-Instrumente zur Visualisierung. Wenn die wissenschaftliche Fragestellung
-hinreichend genau formuliert ist, kann sie mit Hilfe eines Modells
-beantwortet werden. Daten aus klinischen Studien enthalten in der Regel
-Überlebensdaten, die eine Überlebensanalyse erfordern. Bei dieser Art
-von Analyse ist die Zeit bis zu einem bestimmten Ereignis, z.B. Tod oder
-Wiederauftreten der Krankheit, von Interesse, und zwei (oder mehr)
-Gruppen von Patienten werden in Bezug auf diese Zeit verglichen.
+Sobald bereinigte Daten vorliegen, gibt es zwei Hauptmotoren der Wissensgenerierung: Visualisierung und Modellierung. Beide haben komplementäre Stärken und Schwächen, so dass bei einer Analyse immer wieder zwischen ihnen gewechselt wird. Modelle sind ergänzende Instrumente zur Visualisierung. Wenn die wissenschaftliche Fragestellung hinreichend genau formuliert ist, kann sie mit Hilfe eines Modells beantwortet werden. Daten aus klinischen Studien enthalten in der Regel Überlebensdaten, die eine Überlebensanalyse erfordern. Bei dieser Art von Analyse ist die Zeit bis zu einem bestimmten Ereignis, z.B. Tod oder Wiederauftreten der Krankheit, von Interesse, und zwei (oder mehr) Gruppen von Patienten werden in Bezug auf diese Zeit verglichen. <!--more-->
 
 # Überlebensanalyse: Die Statistik
 
@@ -267,7 +257,7 @@ tbl_summary(
   bold_labels() 
 ```
 
-![](/assets/Survival_Analysis_mit_R_METABRIC_files/figure-commonmark/table3.jpg width="75%")
+!\[\](/assets/Survival_Analysis_mit_R_METABRIC_files/figure-commonmark/table3.jpg width="75%")
 
 Nur wenige Patientinnen erhalten eine Chemotherapie `136 + 252 = 388`.
 Patientinnen mit Mastektomie erhalten signifikant häufiger eine

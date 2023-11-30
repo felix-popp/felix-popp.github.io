@@ -211,5 +211,5 @@ p
 
 ![](../assets/Data_Science_mit_R_METABRIC_files/figure-gfm/unnamed-chunk-16-1.png)
 
-Patientinnen, die eine Matektomie erhalten haben, sind offensichtlich
+Patientinnen, die eine Mastektomie erhalten haben, sind offensichtlich
 älter.
